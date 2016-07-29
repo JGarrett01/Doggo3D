@@ -1,0 +1,195 @@
+fileFormatVersion: 2
+guid: 92d6643d4e41dfc46805d5d2a9372a90
+timeCreated: 1469582034
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Alsatian
+    100002: Armature
+    100004: Bone
+    100006: Bone.001
+    100008: Bone.006
+    100010: Bone.007
+    100012: Bone.008
+    100014: Bone.009
+    100016: Bone.009_end
+    100018: Bone.010.L
+    100020: Bone.010.R
+    100022: Bone.011.L
+    100024: Bone.011.R
+    100026: Bone.012.L
+    100028: Bone.012.L_end
+    100030: Bone.012.R
+    100032: Bone.012.R_end
+    100034: Bone.013.L
+    100036: Bone.013.L_end
+    100038: Bone.013.R
+    100040: Bone.013.R_end
+    100042: Bone.014.L
+    100044: Bone.014.R
+    100046: Bone.015.L
+    100048: Bone.015.R
+    100050: Bone.016.L
+    100052: Bone.016.L_end
+    100054: Bone.016.R
+    100056: Bone.016.R_end
+    100058: Bone.017.L
+    100060: Bone.017.L_end
+    100062: Bone.017.R
+    100064: Bone.017.R_end
+    100066: Bone.018
+    100068: Bone.019
+    100070: Bone.020
+    100072: Bone.021
+    100074: Bone.021_end
+    100076: Bone.022.L
+    100078: Bone.022.L_end
+    100080: Bone.022.R
+    100082: Bone.022.R_end
+    100084: Bone.023
+    100086: Bone.023_end
+    100088: Bone.024
+    100090: Bone.024_end
+    100092: Bone.025.L
+    100094: Bone.025.R
+    100096: Bone.026.L
+    100098: Bone.026.R
+    100100: Bone.027.L
+    100102: Bone.027.L_end
+    100104: Bone.027.R
+    100106: Bone.027.R_end
+    100108: Bone.028.L
+    100110: Bone.028.L_end
+    100112: Bone.028.R
+    100114: Bone.028.R_end
+    100116: Bone.029
+    100118: //RootNode
+    400000: Alsatian
+    400002: Armature
+    400004: Bone
+    400006: Bone.001
+    400008: Bone.006
+    400010: Bone.007
+    400012: Bone.008
+    400014: Bone.009
+    400016: Bone.009_end
+    400018: Bone.010.L
+    400020: Bone.010.R
+    400022: Bone.011.L
+    400024: Bone.011.R
+    400026: Bone.012.L
+    400028: Bone.012.L_end
+    400030: Bone.012.R
+    400032: Bone.012.R_end
+    400034: Bone.013.L
+    400036: Bone.013.L_end
+    400038: Bone.013.R
+    400040: Bone.013.R_end
+    400042: Bone.014.L
+    400044: Bone.014.R
+    400046: Bone.015.L
+    400048: Bone.015.R
+    400050: Bone.016.L
+    400052: Bone.016.L_end
+    400054: Bone.016.R
+    400056: Bone.016.R_end
+    400058: Bone.017.L
+    400060: Bone.017.L_end
+    400062: Bone.017.R
+    400064: Bone.017.R_end
+    400066: Bone.018
+    400068: Bone.019
+    400070: Bone.020
+    400072: Bone.021
+    400074: Bone.021_end
+    400076: Bone.022.L
+    400078: Bone.022.L_end
+    400080: Bone.022.R
+    400082: Bone.022.R_end
+    400084: Bone.023
+    400086: Bone.023_end
+    400088: Bone.024
+    400090: Bone.024_end
+    400092: Bone.025.L
+    400094: Bone.025.R
+    400096: Bone.026.L
+    400098: Bone.026.R
+    400100: Bone.027.L
+    400102: Bone.027.L_end
+    400104: Bone.027.R
+    400106: Bone.027.R_end
+    400108: Bone.028.L
+    400110: Bone.028.L_end
+    400112: Bone.028.R
+    400114: Bone.028.R_end
+    400116: Bone.029
+    400118: //RootNode
+    4300000: Alsatian
+    7400000: Armature|ArmatureAction
+    9500000: //RootNode
+    13700000: Alsatian
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
