@@ -7,6 +7,7 @@ public class scr_OwnerController : MonoBehaviour {
 	public float thrust;
 	public Rigidbody rb;
 	public List<GameObject> spheres;
+	public GameObject ballLaunch;
 
 	// Use this for initialization
 	void Start () {
@@ -22,8 +23,12 @@ public class scr_OwnerController : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
 	{
-		if (other.gameObject.tag == "Player") 
+		if (other.gameObject.tag == "Pickup") 
 		{
+			rb = other.GetComponent<Rigidbody> ();
+			other.gameObject.transform.position = ballLaunch.transform.position;
+			other.gameObject.transform.rotation = ballLaunch.transform.rotation;
+
 			rb.AddForce(transform.forward * thrust);
 		}
 	}
