@@ -1,13 +1,11 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{ED813AAC-4DBE-9AC2-7999-941A41060A4B}") = "Doggo3D", "Assembly-CSharp-firstpass.csproj", "{C94A9190-5699-C190-4B55-59BA779A6E74}"
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doggo3D.CSharp.Plugins", "Doggo3D.CSharp.Plugins.csproj", "{34FFD75C-46BF-555C-6266-CAF3829447F9}"
 EndProject
-Project("{ED813AAC-4DBE-9AC2-7999-941A41060A4B}") = "Doggo3D", "Assembly-CSharp.csproj", "{1904DC9B-8C66-9FF5-06CB-77CAD6F3BB59}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doggo3D.CSharp", "Doggo3D.CSharp.csproj", "{11FC464C-3B81-3B93-BFD3-3F3B02D798DA}"
 EndProject
-Project("{ED813AAC-4DBE-9AC2-7999-941A41060A4B}") = "Doggo3D", "Assembly-CSharp-Editor.csproj", "{BB7981B9-1AE1-B55E-543D-1119FE5B9750}"
-EndProject
-Project("{ED813AAC-4DBE-9AC2-7999-941A41060A4B}") = "Doggo3D", "Assembly-UnityScript-firstpass.unityproj", "{511AD139-B024-E33A-881A-B03C7B68840D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doggo3D.CSharp.Editor", "Doggo3D.CSharp.Editor.csproj", "{4C0099E2-4563-FF8C-A952-2161E7300237}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,27 +13,20 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C94A9190-5699-C190-4B55-59BA779A6E74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C94A9190-5699-C190-4B55-59BA779A6E74}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C94A9190-5699-C190-4B55-59BA779A6E74}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C94A9190-5699-C190-4B55-59BA779A6E74}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1904DC9B-8C66-9FF5-06CB-77CAD6F3BB59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1904DC9B-8C66-9FF5-06CB-77CAD6F3BB59}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1904DC9B-8C66-9FF5-06CB-77CAD6F3BB59}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1904DC9B-8C66-9FF5-06CB-77CAD6F3BB59}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BB7981B9-1AE1-B55E-543D-1119FE5B9750}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BB7981B9-1AE1-B55E-543D-1119FE5B9750}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BB7981B9-1AE1-B55E-543D-1119FE5B9750}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BB7981B9-1AE1-B55E-543D-1119FE5B9750}.Release|Any CPU.Build.0 = Release|Any CPU
-		{511AD139-B024-E33A-881A-B03C7B68840D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{511AD139-B024-E33A-881A-B03C7B68840D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{511AD139-B024-E33A-881A-B03C7B68840D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{511AD139-B024-E33A-881A-B03C7B68840D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34FFD75C-46BF-555C-6266-CAF3829447F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34FFD75C-46BF-555C-6266-CAF3829447F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34FFD75C-46BF-555C-6266-CAF3829447F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34FFD75C-46BF-555C-6266-CAF3829447F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11FC464C-3B81-3B93-BFD3-3F3B02D798DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11FC464C-3B81-3B93-BFD3-3F3B02D798DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11FC464C-3B81-3B93-BFD3-3F3B02D798DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11FC464C-3B81-3B93-BFD3-3F3B02D798DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C0099E2-4563-FF8C-A952-2161E7300237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C0099E2-4563-FF8C-A952-2161E7300237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C0099E2-4563-FF8C-A952-2161E7300237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C0099E2-4563-FF8C-A952-2161E7300237}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal
