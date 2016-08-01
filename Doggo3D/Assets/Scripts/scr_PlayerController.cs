@@ -1,7 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using Fungus;
 
 public class scr_PlayerController : MonoBehaviour {
+
+	public Flowchart flowchart;
+	public List<GameObject> dogList;
 
 	public bool canPickup = true;
 	public bool hasPickup = false;
@@ -23,7 +28,13 @@ public class scr_PlayerController : MonoBehaviour {
 	//	currPickup.GetComponent<Collider> ().enabled = true;
 		PickupController ();
 
+		if (Input.GetKeyDown(KeyCode.Joystick1Button0))
+		{
+			dogList.Clear ();
+			Debug.Log ("A");
+		}
 
+		InteractWithDogs ();
 	}
 
 
@@ -66,12 +77,41 @@ public class scr_PlayerController : MonoBehaviour {
 				currPickup = other.gameObject;
 			}
 		}
-
-			
 	}
 
-//	void OnTriggerExit(Collider other)
-//	{
-//		currPickup = null;
-//	}
+	void OnTriggerEnter(Collider doggy) {
+		if (doggy.gameObject.tag == "Talkable") {
+			dogList.Add (doggy.gameObject);
+		}
+	}
+
+	void OnTriggerExit(Collider doggy) {
+		if (doggy.gameObject.tag == "Talkable") {
+			dogList.Clear ();
+		}
+	}
+
+	public void InteractWithDogs() {
+		if (FindClosestDog () != null) {
+			Fungus.Flowchart.BroadcastFungusMessage (FindClosestDog ().gameObject.name);
+		}
+	}
+
+	GameObject FindClosestDog() {
+		GameObject closestDog = null;
+		float closestDistance = 10000000000.0f;
+
+		foreach (GameObject dog in dogList) {
+			if (closestDog == null)
+				closestDog = dog;
+			else {
+				if (Vector3.Distance (this.transform.position, dog.transform.position) < closestDistance) {
+					closestDog = dog;
+					closestDistance = Vector3.Distance (this.transform.position, dog.transform.position);
+				}
+			}
+			closestDistance = Vector3.Distance (this.transform.position, closestDog.transform.position);
+		}
+		return closestDog;
+	}
 }

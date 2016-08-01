@@ -8,6 +8,7 @@ public class scr_OwnerController : MonoBehaviour {
 	public Rigidbody rb;
 	public List<GameObject> spheres;
 	public GameObject ballLaunch;
+	public float ballTimer = 3f;
 
 	// Use this for initialization
 	void Start () {
@@ -27,11 +28,12 @@ public class scr_OwnerController : MonoBehaviour {
 		{
 			rb = other.GetComponent<Rigidbody> ();
 			other.gameObject.transform.position = ballLaunch.transform.position;
-			other.gameObject.transform.rotation = ballLaunch.transform.rotation;
 
 			rb.AddForce(transform.forward * thrust);
 		}
 	}
+		
+
 
 	void FindAllSpheres () {
 		GameObject[] sphoreos = UnityEngine.Object.FindObjectsOfType<GameObject>() ;
