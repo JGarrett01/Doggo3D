@@ -16,6 +16,10 @@ public class scr_PlayerController : MonoBehaviour {
 	public CapsuleCollider capCol;
 	public CharacterJoint joint;
 
+	//-------------------- Player Variables
+	public float moveSpeed = 10f;
+	public float rotSpeed = 3f;
+
 
 	void Start () 
 	{
@@ -31,14 +35,34 @@ public class scr_PlayerController : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.Joystick1Button0))
 		{
 			dogList.Clear ();
-			Debug.Log ("A");
+
 		}
 
 		InteractWithDogs ();
+		PlayerMovement ();
 	}
 
 
 	//Pickup Controller decided whether an object can be picked up
+
+	void PlayerMovement()
+	{
+		if (Input.GetAxis ("LeftStickY") < -0.2) 
+		{
+			transform.position += transform.rotation * new Vector3(0.0f, 0.0f, moveSpeed) * Time.deltaTime;
+		}
+
+		if (Input.GetAxis ("LeftStickX") < -0.05) 
+		{
+			transform.Rotate (new Vector3(0.0f,-rotSpeed,0.0f));
+		}
+
+		if (Input.GetAxis ("LeftStickX") > 0.05) 
+		{
+			transform.Rotate (new Vector3(0.0f,rotSpeed,0.0f));
+		}
+	}
+
 	void PickupController()
 	{
 		if (currPickup != null && Input.GetAxis ("RightTrigger") >= 0.2) 
@@ -95,6 +119,7 @@ public class scr_PlayerController : MonoBehaviour {
 		if (FindClosestDog () != null) {
 			Fungus.Flowchart.BroadcastFungusMessage (FindClosestDog ().gameObject.name);
 		}
+			
 	}
 
 	GameObject FindClosestDog() {

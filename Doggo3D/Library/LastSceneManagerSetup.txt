@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/ParkScene.unity
+- path: Assets/Scenes/ParkScene.unity
   isLoaded: 1
   isActive: 1
