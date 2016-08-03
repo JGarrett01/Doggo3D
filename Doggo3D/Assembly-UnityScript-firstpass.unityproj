@@ -103,25 +103,25 @@
  <HintPath>A:/Users/Jake/Documents/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="MoonSharp.Hardwire">
- <HintPath>A:/Users/Jake/Desktop/Doggo 3.8/Doggo3D/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.Hardwire.dll</HintPath>
+ <HintPath>A:/Users/Jake/Documents/Git/Doggo3D/Doggo3D/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.Hardwire.dll</HintPath>
  </Reference>
  <Reference Include="MoonSharp.Interpreter">
- <HintPath>A:/Users/Jake/Desktop/Doggo 3.8/Doggo3D/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.Interpreter.dll</HintPath>
+ <HintPath>A:/Users/Jake/Documents/Git/Doggo3D/Doggo3D/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.Interpreter.dll</HintPath>
  </Reference>
  <Reference Include="MoonSharp.RemoteDebugger">
- <HintPath>A:/Users/Jake/Desktop/Doggo 3.8/Doggo3D/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.RemoteDebugger.dll</HintPath>
+ <HintPath>A:/Users/Jake/Documents/Git/Doggo3D/Doggo3D/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.RemoteDebugger.dll</HintPath>
  </Reference>
  <Reference Include="ProBuilderCore-Unity5">
- <HintPath>A:/Users/Jake/Desktop/Doggo 3.8/Doggo3D/Assets/ProCore/ProBuilder/Classes/ProBuilderCore-Unity5.dll</HintPath>
+ <HintPath>A:/Users/Jake/Documents/Git/Doggo3D/Doggo3D/Assets/ProCore/ProBuilder/Classes/ProBuilderCore-Unity5.dll</HintPath>
  </Reference>
  <Reference Include="ProBuilderMeshOps-Unity5">
- <HintPath>A:/Users/Jake/Desktop/Doggo 3.8/Doggo3D/Assets/ProCore/ProBuilder/Classes/ProBuilderMeshOps-Unity5.dll</HintPath>
+ <HintPath>A:/Users/Jake/Documents/Git/Doggo3D/Doggo3D/Assets/ProCore/ProBuilder/Classes/ProBuilderMeshOps-Unity5.dll</HintPath>
  </Reference>
  <Reference Include="KDTree">
- <HintPath>A:/Users/Jake/Desktop/Doggo 3.8/Doggo3D/Assets/ProCore/ProBuilder/Classes/ClassesLib/KDTree.dll</HintPath>
+ <HintPath>A:/Users/Jake/Documents/Git/Doggo3D/Doggo3D/Assets/ProCore/ProBuilder/Classes/ClassesLib/KDTree.dll</HintPath>
  </Reference>
  <Reference Include="Triangle">
- <HintPath>A:/Users/Jake/Desktop/Doggo 3.8/Doggo3D/Assets/ProCore/ProBuilder/Classes/ClassesLib/Triangle.dll</HintPath>
+ <HintPath>A:/Users/Jake/Documents/Git/Doggo3D/Doggo3D/Assets/ProCore/ProBuilder/Classes/ClassesLib/Triangle.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

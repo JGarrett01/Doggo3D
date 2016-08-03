@@ -129,3 +129,10 @@ A:\Users\Jake\Desktop\Doggo 3.8\Doggo3D\Temp\bin\Debug\MoonSharp.RemoteDebugger.
 A:\Users\Jake\Desktop\Doggo 3.8\Doggo3D\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
 A:\Users\Jake\Desktop\Doggo 3.8\Doggo3D\obj\Debug\Assembly-CSharp-firstpass.dll
 A:\Users\Jake\Desktop\Doggo 3.8\Doggo3D\obj\Debug\Assembly-CSharp-firstpass.pdb
+A:\Users\Jake\Documents\Git\Doggo3D\Doggo3D\Temp\bin\Debug\MoonSharp.Hardwire.dll
+A:\Users\Jake\Documents\Git\Doggo3D\Doggo3D\Temp\bin\Debug\MoonSharp.Interpreter.dll
+A:\Users\Jake\Documents\Git\Doggo3D\Doggo3D\Temp\bin\Debug\MoonSharp.RemoteDebugger.dll
+A:\Users\Jake\Documents\Git\Doggo3D\Doggo3D\Temp\bin\Debug\MoonSharp.Hardwire.pdb
+A:\Users\Jake\Documents\Git\Doggo3D\Doggo3D\Temp\bin\Debug\MoonSharp.Interpreter.pdb
+A:\Users\Jake\Documents\Git\Doggo3D\Doggo3D\Temp\bin\Debug\MoonSharp.Interpreter.xml
+A:\Users\Jake\Documents\Git\Doggo3D\Doggo3D\Temp\bin\Debug\MoonSharp.RemoteDebugger.pdb

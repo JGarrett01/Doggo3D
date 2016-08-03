@@ -16,7 +16,7 @@ public class scr_PlayerController : MonoBehaviour {
 	public CapsuleCollider capCol;
 	public CharacterJoint joint;
 
-	//-------------------- Dog Interaction Variables
+	//-------------------- Dog Interaction
 
 	public scr_DogInteraction dogInteraction;
 
@@ -40,7 +40,7 @@ public class scr_PlayerController : MonoBehaviour {
 
 		}
 
-		InteractWithDogs ();
+	//	InteractWithDogs ();
 	}
 
 
@@ -107,12 +107,12 @@ public class scr_PlayerController : MonoBehaviour {
 		}
 	}
 
-	public void InteractWithDogs() {
-		if (FindClosestDog () != null) {
-			Fungus.Flowchart.BroadcastFungusMessage (FindClosestDog ().gameObject.name);
-		}
-			
-	}
+//	public void InteractWithDogs() {
+//		if (FindClosestDog () != null) {
+//			Fungus.Flowchart.BroadcastFungusMessage (FindClosestDog ().gameObject.name);
+//		}
+//			
+//	}
 
 	GameObject FindClosestDog() {
 		GameObject closestDog = null;
