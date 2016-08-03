@@ -16,15 +16,17 @@ public class scr_PlayerController : MonoBehaviour {
 	public CapsuleCollider capCol;
 	public CharacterJoint joint;
 
-	//-------------------- Player Variables
-	public float moveSpeed = 10f;
-	public float rotSpeed = 3f;
+	//-------------------- Dog Interaction Variables
+
+	public scr_DogInteraction dogInteraction;
+
 
 
 	void Start () 
 	{
 		capCol = GetComponent<CapsuleCollider> ();
 		joint = GetComponentInChildren<CharacterJoint> ();
+		dogInteraction = GetComponent<scr_DogInteraction> ();
 	}
 
 	void LateUpdate () 
@@ -32,36 +34,18 @@ public class scr_PlayerController : MonoBehaviour {
 	//	currPickup.GetComponent<Collider> ().enabled = true;
 		PickupController ();
 
-		if (Input.GetKeyDown(KeyCode.Joystick1Button0))
+		if (Input.GetKeyDown(KeyCode.Joystick1Button1))
 		{
 			dogList.Clear ();
 
 		}
 
 		InteractWithDogs ();
-		PlayerMovement ();
 	}
 
 
 	//Pickup Controller decided whether an object can be picked up
 
-	void PlayerMovement()
-	{
-		if (Input.GetAxis ("LeftStickY") < -0.2) 
-		{
-			transform.position += transform.rotation * new Vector3(0.0f, 0.0f, moveSpeed) * Time.deltaTime;
-		}
-
-		if (Input.GetAxis ("LeftStickX") < -0.05) 
-		{
-			transform.Rotate (new Vector3(0.0f,-rotSpeed,0.0f));
-		}
-
-		if (Input.GetAxis ("LeftStickX") > 0.05) 
-		{
-			transform.Rotate (new Vector3(0.0f,rotSpeed,0.0f));
-		}
-	}
 
 	void PickupController()
 	{
@@ -96,7 +80,7 @@ public class scr_PlayerController : MonoBehaviour {
 	{
 		if (currPickup == null) 
 		{
-			if (other.gameObject.tag == "Pickup")
+			if (other.gameObject.tag == "Pickup" || other.gameObject.tag == "TennisBall")
 			{
 				currPickup = other.gameObject;
 			}
@@ -106,6 +90,14 @@ public class scr_PlayerController : MonoBehaviour {
 	void OnTriggerEnter(Collider doggy) {
 		if (doggy.gameObject.tag == "Talkable") {
 			dogList.Add (doggy.gameObject);
+
+//-----------------Dog Interactions---------------------------------
+
+			if (doggy.gameObject.name == "Jax" && dogInteraction.jaxTennisBall == true)
+			{
+				Fungus.Flowchart.BroadcastFungusMessage ("JaxTennisBall");
+				Debug.Log ("Jax tennis ball");
+			}
 		}
 	}
 
