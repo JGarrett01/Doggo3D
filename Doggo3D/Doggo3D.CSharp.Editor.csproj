@@ -53,6 +53,18 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEditor.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\UnityAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>Library\UnityAssemblies\UnityEditor.Advertisements.dll</HintPath>
     </Reference>
@@ -61,18 +73,6 @@
     </Reference>
     <Reference Include="UnityEditor.EditorTestsRunner">
       <HintPath>Library\UnityAssemblies\UnityEditor.EditorTestsRunner.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>Library\UnityAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEditor.Networking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TreeEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.TreeEditor.dll</HintPath>
@@ -107,6 +107,18 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
+    <Reference Include="MoonSharp.Hardwire">
+      <HintPath>Assets\Fungus\Thirdparty\FungusLua\Thirdparty\Moonsharp\MoonSharp.Hardwire.dll</HintPath>
+    </Reference>
+    <Reference Include="MoonSharp.Interpreter">
+      <HintPath>Assets\Fungus\Thirdparty\FungusLua\Thirdparty\Moonsharp\MoonSharp.Interpreter.dll</HintPath>
+    </Reference>
+    <Reference Include="MoonSharp.RemoteDebugger">
+      <HintPath>Assets\Fungus\Thirdparty\FungusLua\Thirdparty\Moonsharp\MoonSharp.RemoteDebugger.dll</HintPath>
+    </Reference>
+    <Reference Include="Editor.ReorderableList">
+      <HintPath>Assets\Fungus\Thirdparty\Reorderable List Field\Editor\Editor.ReorderableList.dll</HintPath>
+    </Reference>
     <Reference Include="ProBuilderCore-Unity5">
       <HintPath>Assets\ProCore\ProBuilder\Classes\ProBuilderCore-Unity5.dll</HintPath>
     </Reference>
@@ -138,6 +150,53 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
+    <Compile Include="Assets\Fungus\Audio\Editor\ControlAudioEditor.cs" />
+    <Compile Include="Assets\Fungus\Camera\Editor\CameraMenuItems.cs" />
+    <Compile Include="Assets\Fungus\Camera\Editor\ViewEditor.cs" />
+    <Compile Include="Assets\Fungus\Flowchart\Editor\AssetModProcessor.cs" />
+    <Compile Include="Assets\Fungus\Flowchart\Editor\BlockEditor.cs" />
+    <Compile Include="Assets\Fungus\Flowchart\Editor\BlockInspector.cs" />
+    <Compile Include="Assets\Fungus\Flowchart\Editor\CallEditor.cs" />
+    <Compile Include="Assets\Fungus\Flowchart\Editor\CommandEditor.cs" />
+    <Compile Include="Assets\Fungus\Flowchart\Editor\CommandListAdaptor.cs" />
+    <Compile Include="Assets\Fungus\Flowchart\Editor\CustomGUI.cs" />
+    <Compile Include="Assets\Fungus\Flowchart\Editor\EditorExtensions.cs" />
+    <Compile Include="Assets\Fungus\Flowchart\Editor\EditorZoomArea.cs" />
+    <Compile Include="Assets\Fungus\Flowchart\Editor\EventHandlerEditor.cs" />
+    <Compile Include="Assets\Fungus\Flowchart\Editor\Extensions\SerializedPropertyExtensions.cs" />
+    <Compile Include="Assets\Fungus\Flowchart\Editor\FlowchartEditor.cs" />
+    <Compile Include="Assets\Fungus\Flowchart\Editor\FlowchartMenuItems.cs" />
+    <Compile Include="Assets\Fungus\Flowchart\Editor\FlowchartWindow.cs" />
+    <Compile Include="Assets\Fungus\Flowchart\Editor\FungusEditorResources.cs" />
+    <Compile Include="Assets\Fungus\Flowchart\Editor\GLDraw.cs" />
+    <Compile Include="Assets\Fungus\Flowchart\Editor\IfEditor.cs" />
+    <Compile Include="Assets\Fungus\Flowchart\Editor\InvokeEventEditor.cs" />
+    <Compile Include="Assets\Fungus\Flowchart\Editor\InvokeMethodEditor.cs" />
+    <Compile Include="Assets\Fungus\Flowchart\Editor\LabelEditor.cs" />
+    <Compile Include="Assets\Fungus\Flowchart\Editor\SetVariableEditor.cs" />
+    <Compile Include="Assets\Fungus\Flowchart\Editor\VariableEditor.cs" />
+    <Compile Include="Assets\Fungus\Flowchart\Editor\VariableListAdaptor.cs" />
+    <Compile Include="Assets\Fungus\Narrative\Editor\CharacterEditor.cs" />
+    <Compile Include="Assets\Fungus\Narrative\Editor\DialogInputEditor.cs" />
+    <Compile Include="Assets\Fungus\Narrative\Editor\LocalizationEditor.cs" />
+    <Compile Include="Assets\Fungus\Narrative\Editor\MenuEditor.cs" />
+    <Compile Include="Assets\Fungus\Narrative\Editor\MenuTimerEditor.cs" />
+    <Compile Include="Assets\Fungus\Narrative\Editor\NarrativeMenuItems.cs" />
+    <Compile Include="Assets\Fungus\Narrative\Editor\PortraitEditor.cs" />
+    <Compile Include="Assets\Fungus\Narrative\Editor\SayEditor.cs" />
+    <Compile Include="Assets\Fungus\Narrative\Editor\StageEditor.cs" />
+    <Compile Include="Assets\Fungus\Sprite\Editor\SetColliderEditor.cs" />
+    <Compile Include="Assets\Fungus\Sprite\Editor\SpriteMenuItems.cs" />
+    <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\Editor\DropDownControl.cs" />
+    <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\Editor\ExecuteHandlerEditor.cs" />
+    <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\Editor\LuaBindingsEditor.cs" />
+    <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\Editor\LuaScriptEditor.cs" />
+    <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\Editor\LuaStoreEditor.cs" />
+    <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\Editor\LuaUtilsEditor.cs" />
+    <Compile Include="Assets\Fungus\Thirdparty\FungusLua\Scripts\Editor\MenuItems.cs" />
+    <Compile Include="Assets\Fungus\Thirdparty\Usfxr\Editor\SfxrGenerator.cs" />
+    <Compile Include="Assets\Fungus\UI\Editor\WriteEditor.cs" />
+    <Compile Include="Assets\Fungus\UI\Editor\WriterAudioEditor.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\About\Editor\pb_AboutWindow.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Actions\pb_GenerateUV2.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Geometry\pb_DetachDeleteFace.cs" />
@@ -162,6 +221,30 @@
     <Compile Include="Assets\ProCore\ProBuilder\Editor\pb_ScenePostProcessor.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Fungus\CHANGELOG.txt" />
+    <None Include="Assets\Fungus\Flowchart\Editor\Resources\GLLineDraw.shader" />
+    <None Include="Assets\Fungus\Integrations\Spine\Readme.txt" />
+    <None Include="Assets\Fungus\LICENSE.txt" />
+    <None Include="Assets\Fungus\Narrative\Fonts\Amaranth\SIL Open Font License.txt" />
+    <None Include="Assets\Fungus\Narrative\Fonts\Exo2\OFL.txt" />
+    <None Include="Assets\Fungus\Narrative\Images\Attribution.txt" />
+    <None Include="Assets\Fungus\README.txt" />
+    <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Lua\fungus.txt" />
+    <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Lua\inspect.txt" />
+    <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Types\FungusTypes.txt" />
+    <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Types\UnityTypes.txt" />
+    <None Include="Assets\Fungus\Thirdparty\FungusLua\Thirdparty\JSON\readme.txt" />
+    <None Include="Assets\Fungus\Thirdparty\FungusLua\Thirdparty\Moonsharp\MoonSharp.Interpreter.xml" />
+    <None Include="Assets\Fungus\Thirdparty\LeanTween\ReadMe.txt" />
+    <None Include="Assets\Fungus\Thirdparty\Reorderable List Field\Editor\Editor.ReorderableList.xml" />
+    <None Include="Assets\Fungus\Thirdparty\Reorderable List Field\LICENSE.txt" />
+    <None Include="Assets\Fungus\Thirdparty\Reorderable List Field\README.txt" />
+    <None Include="Assets\FungusExamples\Attribution.txt" />
+    <None Include="Assets\FungusExamples\FungusLua\Localization\stringtable.txt" />
+    <None Include="Assets\FungusExamples\FungusLua\Narrative\Resources\Lua\junglestory.txt" />
+    <None Include="Assets\FungusExamples\FungusTown\Readme.txt" />
+    <None Include="Assets\FungusExamples\Sherlock\Readme.txt" />
+    <None Include="Assets\FungusExamples\TheFacility\Fonts\aleo\SIL Open Font License.txt" />
     <None Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\README.txt" />
     <None Include="Assets\ProCore\ProBuilder\About\Credits.txt" />
     <None Include="Assets\ProCore\ProBuilder\About\changelog.txt" />
