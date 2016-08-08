@@ -26,6 +26,13 @@ public class scr_MenuController : MonoBehaviour {
     {
         Application.Quit();
     }
+
+    public void ReturnToMenu()
+    {
+
+        SceneManager.LoadScene ("MenuScene");
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
