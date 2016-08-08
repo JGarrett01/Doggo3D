@@ -65,6 +65,7 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+<<<<<<< HEAD
     <Reference Include="Mono.Cecil">
       <HintPath>Library\UnityAssemblies\Mono.Cecil.dll</HintPath>
     </Reference>
@@ -89,6 +90,8 @@
     <Reference Include="MoonSharp.RemoteDebugger">
       <HintPath>Assets\Fungus\Thirdparty\FungusLua\Thirdparty\Moonsharp\MoonSharp.RemoteDebugger.dll</HintPath>
     </Reference>
+=======
+>>>>>>> 2329d6e943e3187ef5d8aefe4d92b52303d7406f
     <Reference Include="ProBuilderCore-Unity5">
       <HintPath>Assets\ProCore\ProBuilder\Classes\ProBuilderCore-Unity5.dll</HintPath>
     </Reference>
@@ -149,30 +152,6 @@
     <Compile Include="Assets\Standard Assets\Utility\WaypointProgressTracker.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Fungus\CHANGELOG.txt" />
-    <None Include="Assets\Fungus\Flowchart\Editor\Resources\GLLineDraw.shader" />
-    <None Include="Assets\Fungus\Integrations\Spine\Readme.txt" />
-    <None Include="Assets\Fungus\LICENSE.txt" />
-    <None Include="Assets\Fungus\Narrative\Fonts\Amaranth\SIL Open Font License.txt" />
-    <None Include="Assets\Fungus\Narrative\Fonts\Exo2\OFL.txt" />
-    <None Include="Assets\Fungus\Narrative\Images\Attribution.txt" />
-    <None Include="Assets\Fungus\README.txt" />
-    <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Lua\fungus.txt" />
-    <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Lua\inspect.txt" />
-    <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Types\FungusTypes.txt" />
-    <None Include="Assets\Fungus\Thirdparty\FungusLua\Resources\Types\UnityTypes.txt" />
-    <None Include="Assets\Fungus\Thirdparty\FungusLua\Thirdparty\JSON\readme.txt" />
-    <None Include="Assets\Fungus\Thirdparty\FungusLua\Thirdparty\Moonsharp\MoonSharp.Interpreter.xml" />
-    <None Include="Assets\Fungus\Thirdparty\LeanTween\ReadMe.txt" />
-    <None Include="Assets\Fungus\Thirdparty\Reorderable List Field\Editor\Editor.ReorderableList.xml" />
-    <None Include="Assets\Fungus\Thirdparty\Reorderable List Field\LICENSE.txt" />
-    <None Include="Assets\Fungus\Thirdparty\Reorderable List Field\README.txt" />
-    <None Include="Assets\FungusExamples\Attribution.txt" />
-    <None Include="Assets\FungusExamples\FungusLua\Localization\stringtable.txt" />
-    <None Include="Assets\FungusExamples\FungusLua\Narrative\Resources\Lua\junglestory.txt" />
-    <None Include="Assets\FungusExamples\FungusTown\Readme.txt" />
-    <None Include="Assets\FungusExamples\Sherlock\Readme.txt" />
-    <None Include="Assets\FungusExamples\TheFacility\Fonts\aleo\SIL Open Font License.txt" />
     <None Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\README.txt" />
     <None Include="Assets\ProCore\ProBuilder\About\Credits.txt" />
     <None Include="Assets\ProCore\ProBuilder\About\changelog.txt" />
