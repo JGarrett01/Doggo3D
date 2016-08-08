@@ -6,6 +6,7 @@ public class scr_DogInteraction : MonoBehaviour {
 	public bool jaxTennisBall = false;
 	public scr_PlayerController playerController;
 
+
 	// Use this for initialization
 	void Start () {
 		playerController = GetComponent<scr_PlayerController> ();
@@ -22,4 +23,8 @@ public class scr_DogInteraction : MonoBehaviour {
 			jaxTennisBall = true;
 		}
 	}
+
+
+
+
 }

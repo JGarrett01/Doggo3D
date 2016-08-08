@@ -40,7 +40,7 @@ public class scr_PlayerController : MonoBehaviour {
 
 		}
 
-	//	InteractWithDogs ();
+		//InteractWithDogs ();
 	}
 
 
@@ -73,6 +73,7 @@ public class scr_PlayerController : MonoBehaviour {
 			currPickup = null;
 			capCol.enabled = true;
 			joint.connectedBody = null;
+			dogInteraction.jaxTennisBall = false;
 		}
 	}
 
@@ -92,12 +93,6 @@ public class scr_PlayerController : MonoBehaviour {
 			dogList.Add (doggy.gameObject);
 
 //-----------------Dog Interactions---------------------------------
-
-			if (doggy.gameObject.name == "Jax" && dogInteraction.jaxTennisBall == true)
-			{
-				Fungus.Flowchart.BroadcastFungusMessage ("JaxTennisBall");
-				Debug.Log ("Jax tennis ball");
-			}
 		}
 	}
 
@@ -109,9 +104,12 @@ public class scr_PlayerController : MonoBehaviour {
 
 //	public void InteractWithDogs() {
 //		if (FindClosestDog () != null) {
+//			if (FindClosestDog ().gameObject.name == "Jax" && dogInteraction.jaxTennisBall) {
+//				Fungus.Flowchart.BroadcastFungusMessage ("JaxTennisBall");
+//			} else
 //			Fungus.Flowchart.BroadcastFungusMessage (FindClosestDog ().gameObject.name);
 //		}
-//			
+			
 //	}
 
 	GameObject FindClosestDog() {
