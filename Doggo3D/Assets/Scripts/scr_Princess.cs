@@ -17,19 +17,26 @@ public class scr_Princess : MonoBehaviour {
     void Update()
     {
 
+        if (playerController.currPickup == null)
+        {
+            hasBone = false;
+
+        }
+
         if (playerController.currPickup != null)
         {
             inMouth = playerController.currPickup;
+            
         }
 
         if (inMouth.tag == "Pickup" && playerController.currPickup != null)
         {
 
             hasBone = true;
-
+            Debug.Log("Set");
         }
 
-    
+        
 
 
     }
