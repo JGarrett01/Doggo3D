@@ -228,27 +228,35 @@
      <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\IcoBumpin.cs" />
      <Compile Include="Assets\ProCore\ProBuilder\API Examples\Misc\HueCube.cs" />
      <Compile Include="Assets\ProCore\ProBuilder\API Examples\Runtime Editing\RuntimeEdit.cs" />
+     <Compile Include="Assets\RoadTool\Scripts\Road.cs" />
+     <Compile Include="Assets\RoadTool\Scripts\RoadMath.cs" />
+     <Compile Include="Assets\RoadTool\Scripts\RoadUtils.cs" />
      <Compile Include="Assets\Scripts\scr_Achievments.cs" />
      <Compile Include="Assets\Scripts\scr_BillboardingScript.cs" />
+     <Compile Include="Assets\Scripts\scr_DogInteraction.cs" />
      <Compile Include="Assets\Scripts\scr_GameController.cs" />
+     <Compile Include="Assets\Scripts\scr_MenuController.cs" />
      <Compile Include="Assets\Scripts\scr_OwnerController.cs" />
      <Compile Include="Assets\Scripts\scr_Pickup.cs" />
      <Compile Include="Assets\Scripts\scr_PlayerController.cs" />
      <None Include="Assets\Standard Assets\Kitten\Shaders\Normal-Diffuse.shader" />
      <None Include="Assets\ProCore\ProBuilder\Shader\pb_TransparentOverlay.shader" />
      <None Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\README.txt" />
+     <None Include="Assets\RoadTool\Texture\Texture Credits.txt" />
      <None Include="Assets\ProCore\ProBuilder\About\changelog.txt" />
      <None Include="Assets\ProCore\ProBuilder\Shader\DiffuseVertexColor.shader" />
      <None Include="Assets\Fungus\Thirdparty\FungusLua\Thirdparty\JSON\readme.txt" />
      <None Include="Assets\Fungus\README.txt" />
      <None Include="Assets\Standard Assets\Kitten\Shaders\Alpha-Diffuse.shader" />
      <None Include="Assets\ProCore\ProBuilder\Shader\pb_FaceHighlight.shader" />
+     <None Include="Assets\RoadTool\README.txt" />
      <None Include="Assets\Fungus\Flowchart\Editor\Resources\GLLineDraw.shader" />
      <None Include="Assets\Fungus\Thirdparty\LeanTween\ReadMe.txt" />
      <None Include="Assets\ProCore\ProBuilder\Shader\UnlitSolidColor.shader" />
      <None Include="Assets\Fungus\Narrative\Fonts\Exo2\OFL.txt" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\Fungus\LICENSE.txt" />
+     <None Include="Assets\RoadTool\Example\Standard Assets\Skyboxes\_skybox info.txt" />
      <None Include="Assets\Fungus\Thirdparty\FungusLua\Thirdparty\Moonsharp\MoonSharp.Interpreter.xml" />
      <None Include="Assets\ProCore\ProBuilder\Shader\DiffuseTextureBlend.shader" />
      <None Include="Assets\ProCore\ProBuilder\Shader\pb_HideVertices.shader" />
@@ -280,26 +288,26 @@
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
- <Reference Include="ProBuilderCore-Unity5">
- <HintPath>C:/Users/jmgarrett/Desktop/Doggo3D/Assets/ProCore/ProBuilder/Classes/ProBuilderCore-Unity5.dll</HintPath>
- </Reference>
- <Reference Include="ProBuilderMeshOps-Unity5">
- <HintPath>C:/Users/jmgarrett/Desktop/Doggo3D/Assets/ProCore/ProBuilder/Classes/ProBuilderMeshOps-Unity5.dll</HintPath>
- </Reference>
- <Reference Include="KDTree">
- <HintPath>C:/Users/jmgarrett/Desktop/Doggo3D/Assets/ProCore/ProBuilder/Classes/ClassesLib/KDTree.dll</HintPath>
- </Reference>
- <Reference Include="Triangle">
- <HintPath>C:/Users/jmgarrett/Desktop/Doggo3D/Assets/ProCore/ProBuilder/Classes/ClassesLib/Triangle.dll</HintPath>
+ <Reference Include="MoonSharp.Hardwire">
+ <HintPath>C:/Users/jmgarrett/Documents/Doggo3D/Doggo3D/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.Hardwire.dll</HintPath>
  </Reference>
  <Reference Include="MoonSharp.Interpreter">
- <HintPath>C:/Users/jmgarrett/Desktop/Doggo3D/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.Interpreter.dll</HintPath>
- </Reference>
- <Reference Include="MoonSharp.Hardwire">
- <HintPath>C:/Users/jmgarrett/Desktop/Doggo3D/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.Hardwire.dll</HintPath>
+ <HintPath>C:/Users/jmgarrett/Documents/Doggo3D/Doggo3D/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.Interpreter.dll</HintPath>
  </Reference>
  <Reference Include="MoonSharp.RemoteDebugger">
- <HintPath>C:/Users/jmgarrett/Desktop/Doggo3D/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.RemoteDebugger.dll</HintPath>
+ <HintPath>C:/Users/jmgarrett/Documents/Doggo3D/Doggo3D/Assets/Fungus/Thirdparty/FungusLua/Thirdparty/Moonsharp/MoonSharp.RemoteDebugger.dll</HintPath>
+ </Reference>
+ <Reference Include="ProBuilderCore-Unity5">
+ <HintPath>C:/Users/jmgarrett/Documents/Doggo3D/Doggo3D/Assets/ProCore/ProBuilder/Classes/ProBuilderCore-Unity5.dll</HintPath>
+ </Reference>
+ <Reference Include="ProBuilderMeshOps-Unity5">
+ <HintPath>C:/Users/jmgarrett/Documents/Doggo3D/Doggo3D/Assets/ProCore/ProBuilder/Classes/ProBuilderMeshOps-Unity5.dll</HintPath>
+ </Reference>
+ <Reference Include="KDTree">
+ <HintPath>C:/Users/jmgarrett/Documents/Doggo3D/Doggo3D/Assets/ProCore/ProBuilder/Classes/ClassesLib/KDTree.dll</HintPath>
+ </Reference>
+ <Reference Include="Triangle">
+ <HintPath>C:/Users/jmgarrett/Documents/Doggo3D/Doggo3D/Assets/ProCore/ProBuilder/Classes/ClassesLib/Triangle.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

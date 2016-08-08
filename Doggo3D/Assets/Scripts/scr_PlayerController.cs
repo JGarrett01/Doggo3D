@@ -16,11 +16,17 @@ public class scr_PlayerController : MonoBehaviour {
 	public CapsuleCollider capCol;
 	public CharacterJoint joint;
 
+	//-------------------- Dog Interaction
+
+	public scr_DogInteraction dogInteraction;
+
+
 
 	void Start () 
 	{
 		capCol = GetComponent<CapsuleCollider> ();
 		joint = GetComponentInChildren<CharacterJoint> ();
+		dogInteraction = GetComponent<scr_DogInteraction> ();
 	}
 
 	void LateUpdate () 
@@ -28,17 +34,19 @@ public class scr_PlayerController : MonoBehaviour {
 	//	currPickup.GetComponent<Collider> ().enabled = true;
 		PickupController ();
 
-		if (Input.GetKeyDown(KeyCode.Joystick1Button0))
+		if (Input.GetKeyDown(KeyCode.Joystick1Button1))
 		{
 			dogList.Clear ();
-			Debug.Log ("A");
+
 		}
 
-		InteractWithDogs ();
+	//	InteractWithDogs ();
 	}
 
 
 	//Pickup Controller decided whether an object can be picked up
+
+
 	void PickupController()
 	{
 		if (currPickup != null && Input.GetAxis ("RightTrigger") >= 0.2) 
@@ -72,7 +80,7 @@ public class scr_PlayerController : MonoBehaviour {
 	{
 		if (currPickup == null) 
 		{
-			if (other.gameObject.tag == "Pickup")
+			if (other.gameObject.tag == "Pickup" || other.gameObject.tag == "TennisBall")
 			{
 				currPickup = other.gameObject;
 			}
@@ -82,6 +90,14 @@ public class scr_PlayerController : MonoBehaviour {
 	void OnTriggerEnter(Collider doggy) {
 		if (doggy.gameObject.tag == "Talkable") {
 			dogList.Add (doggy.gameObject);
+
+//-----------------Dog Interactions---------------------------------
+
+			if (doggy.gameObject.name == "Jax" && dogInteraction.jaxTennisBall == true)
+			{
+				Fungus.Flowchart.BroadcastFungusMessage ("JaxTennisBall");
+				Debug.Log ("Jax tennis ball");
+			}
 		}
 	}
 
@@ -91,11 +107,12 @@ public class scr_PlayerController : MonoBehaviour {
 		}
 	}
 
-	public void InteractWithDogs() {
-		if (FindClosestDog () != null) {
-			Fungus.Flowchart.BroadcastFungusMessage (FindClosestDog ().gameObject.name);
-		}
-	}
+//	public void InteractWithDogs() {
+//		if (FindClosestDog () != null) {
+//			Fungus.Flowchart.BroadcastFungusMessage (FindClosestDog ().gameObject.name);
+//		}
+//			
+//	}
 
 	GameObject FindClosestDog() {
 		GameObject closestDog = null;

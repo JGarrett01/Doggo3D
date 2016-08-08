@@ -24,7 +24,7 @@ public class scr_OwnerController : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
 	{
-		if (other.gameObject.tag == "Pickup") 
+		if (other.gameObject.tag == "TennisBall") 
 		{
 			rb = other.GetComponent<Rigidbody> ();
 			other.gameObject.transform.position = ballLaunch.transform.position;
