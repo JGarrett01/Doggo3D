@@ -24,7 +24,7 @@ public class scr_Jax : MonoBehaviour {
 
         }	
 		
-			inMouth = playerController.currPickup; 
+		//	inMouth = playerController.currPickup; 
 		
 
         if (inMouth.tag == "TennisBall" && playerController.currPickup != null)
