@@ -1,5 +1,6 @@
 Base path: A:/Users/Jake/Documents/Editor/Data
 Cmd: getPlatforms
+<<<<<<< HEAD
 Cmd: preprocess
   insize=620 outsize=1156 ok=1
 Cmd: preprocess
@@ -96,3 +97,5 @@ Cmd: preprocess
   insize=226 outsize=223 ok=1
 Cmd: preprocess
   insize=1679 outsize=477 ok=1
+=======
+>>>>>>> 296e37144a5d4306583d9d8d9322ba4e6135821f
