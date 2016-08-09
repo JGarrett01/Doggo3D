@@ -1,5 +1,53 @@
-Base path: C:/Program Files/Unity/Editor/Data
+Base path: F:/Unity/Editor/Data
 Cmd: getPlatforms
+Cmd: preprocess
+  insize=620 outsize=1156 ok=1
+Cmd: preprocess
+  insize=4398 outsize=1114 ok=1
+Cmd: compileSnippet
+  error: 2 plat 4 at (80): undeclared identifier 'unity_ObjectToWorld'\nCompiling Vertex program with WATER_REFRACTIVE
+Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING
+  api=4 type=0 insize=3585 outsize=0 kw=WATER_REFRACTIVE pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING ok=0
+Cmd: preprocess
+  insize=522 outsize=1551 ok=1
+Cmd: preprocess
+  insize=13365 outsize=2743 ok=1
+Cmd: compileSnippet
+  error: 2 plat 4 at (136): undeclared identifier 'unity_ObjectToWorld'\nCompiling Vertex program with WATER_REFLECTIVE WATER_VERTEX_DISPLACEMENT_ON WATER_EDGEBLEND_ON
+Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING
+  api=4 type=0 insize=10620 outsize=0 kw=WATER_REFLECTIVE WATER_VERTEX_DISPLACEMENT_ON WATER_EDGEBLEND_ON pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING ok=0
+Cmd: preprocess
+  insize=542 outsize=1522 ok=1
+Cmd: preprocess
+  insize=1124 outsize=1649 ok=1
+Cmd: preprocess
+  insize=820 outsize=364 ok=1
+Cmd: preprocess
+  insize=12498 outsize=2620 ok=1
+Cmd: compileSnippet
+  error: 2 plat 4 at (130): undeclared identifier 'unity_ObjectToWorld'\nCompiling Vertex program with WATER_REFLECTIVE WATER_VERTEX_DISPLACEMENT_ON WATER_EDGEBLEND_ON
+Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING
+  api=4 type=0 insize=9879 outsize=0 kw=WATER_REFLECTIVE WATER_VERTEX_DISPLACEMENT_ON WATER_EDGEBLEND_ON pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING ok=0
+Cmd: preprocess
+  insize=607 outsize=280 ok=1
+Cmd: preprocess
+  insize=21604 outsize=3718 ok=1
+Cmd: preprocess
+  insize=1968 outsize=620 ok=1
+Cmd: compileSnippet
+  error: 2 plat 4 at (44): undeclared identifier 'unity_ObjectToWorld'\nCompiling Vertex program
+Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING
+  api=4 type=0 insize=1654 outsize=0 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING ok=0
+Cmd: preprocess
+  insize=769 outsize=410 ok=1
+Cmd: preprocess
+  insize=989 outsize=421 ok=1
+Cmd: preprocess
+  insize=936 outsize=413 ok=1
+Cmd: preprocess
+  insize=226 outsize=223 ok=1
+Cmd: preprocess
+  insize=1679 outsize=477 ok=1
 Cmd: preprocess
   insize=620 outsize=1156 ok=1
 Cmd: preprocess
