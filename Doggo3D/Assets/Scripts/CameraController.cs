@@ -19,6 +19,8 @@ public class CameraController : MonoBehaviour {
     //Time it takes to go to the original rotation (used for delay between current rotation and wanted rotation).
     public float rotationSnapTime = 0.3f;
 
+    public float rotationSpeed = 200.0f;
+
     //Time it takes to go back to the original zoom distance dependant of target's Rigidbody velocity.
     public float distanceSnapTime;
 
@@ -62,9 +64,12 @@ public class CameraController : MonoBehaviour {
         //}
 
         if(Input.GetAxisRaw("RightStickX") == 0 && wantedRotationAngle != target.eulerAngles.y) {
-            wantedRotationAngle += Time.deltaTime * 100;
-        } else {
             wantedRotationAngle = target.eulerAngles.y;
+        } else {
+            if(Input.GetAxisRaw("RightStickX") < 0)
+                wantedRotationAngle += Time.deltaTime * rotationSpeed;
+            else
+                wantedRotationAngle -= Time.deltaTime * rotationSpeed;
         }
 
 

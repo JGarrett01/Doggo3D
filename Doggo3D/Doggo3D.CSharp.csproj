@@ -300,8 +300,6 @@
     <Compile Include="Assets\Scripts\scr_PlayerController.cs" />
     <Compile Include="Assets\Scripts\scr_Princess.cs" />
     <Compile Include="Assets\Scripts\scr_Zeus.cs" />
-    <Compile Include="Assets\Single TPS Controller\Scripts\ControladorDePersonagem.cs" />
-    <Compile Include="Assets\Single TPS Controller\Scripts\ControleOrbital.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Fungus\CHANGELOG.txt" />
