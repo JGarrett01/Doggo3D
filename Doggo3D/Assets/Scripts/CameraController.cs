@@ -55,7 +55,19 @@ public class CameraController : MonoBehaviour {
         wantedHeight = target.position.y + height;
         currentHeight = transform.position.y;
 
-        wantedRotationAngle = target.eulerAngles.y;
+        //
+
+        //if(wantedRotationAngle != target.eulerAngles.y) {
+
+        //}
+
+        if(Input.GetAxisRaw("RightStickX") == 0 && wantedRotationAngle != target.eulerAngles.y) {
+            wantedRotationAngle += Time.deltaTime * 100;
+        } else {
+            wantedRotationAngle = target.eulerAngles.y;
+        }
+
+
         currentRotationAngle = transform.eulerAngles.y;
 
         currentRotationAngle = Mathf.SmoothDampAngle(currentRotationAngle, wantedRotationAngle, ref yVelocity, rotationSnapTime);
