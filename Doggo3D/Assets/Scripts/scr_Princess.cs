@@ -6,6 +6,7 @@ public class scr_Princess : MonoBehaviour {
     public scr_PlayerController playerController;
     public bool hasBone = false;
     public GameObject inMouth;
+    public bool hasCompleted = false;
 
     // Use this for initialization
     void Start()
@@ -23,17 +24,17 @@ public class scr_Princess : MonoBehaviour {
 
         }
 
-        if (playerController.currPickup != null)
-        {
+        
+        
             inMouth = playerController.currPickup;
             
-        }
+        
 
         if (inMouth.tag == "Pickup" && playerController.currPickup != null)
         {
 
             hasBone = true;
-            Debug.Log("Set");
+            
         }
 
         
@@ -48,7 +49,7 @@ public class scr_Princess : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player" && hasBone == false)
+        if (other.gameObject.tag == "Player" && hasBone == false && hasCompleted == false)
         {
             Fungus.Flowchart.BroadcastFungusMessage("Princess");
         }
@@ -59,11 +60,16 @@ public class scr_Princess : MonoBehaviour {
         if (other.gameObject.tag == "Player" && hasBone == true)
         {
             Fungus.Flowchart.BroadcastFungusMessage("Princess2");
-  
+            hasCompleted = true;
 
         }
 
+        if (other.gameObject.tag == "Player" && hasCompleted == true)
+        {
+            Fungus.Flowchart.BroadcastFungusMessage("Princess2");
+            
 
+        }
 
 
     }

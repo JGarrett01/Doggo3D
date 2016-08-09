@@ -18,10 +18,14 @@ public class scr_Jax : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		if (playerController.currPickup != null) 
-		{
+	 if (playerController.currPickup == null)
+        {
+            hasBall = false;
+
+        }	
+		
 			inMouth = playerController.currPickup; 
-		}
+		
 
         if (inMouth.tag == "TennisBall" && playerController.currPickup != null)
         {
@@ -38,8 +42,9 @@ public class scr_Jax : MonoBehaviour {
 
         }
 
+       
 
-	}
+    }
 
 	void Interactions()
 	{
@@ -48,7 +53,7 @@ public class scr_Jax : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
 	{
-		if (other.gameObject.tag == "Player" && hasBall == false) 
+		if (other.gameObject.tag == "Player" && hasBall == false && hasCompleted == false) 
 		{
 			Fungus.Flowchart.BroadcastFungusMessage ("JaxHello");
 		}
