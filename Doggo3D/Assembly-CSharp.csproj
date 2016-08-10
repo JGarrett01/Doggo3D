@@ -233,6 +233,7 @@
      <Compile Include="Assets\RoadTool\Scripts\RoadMath.cs" />
      <Compile Include="Assets\RoadTool\Scripts\RoadUtils.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
+     <Compile Include="Assets\Scripts\Fade.cs" />
      <Compile Include="Assets\Scripts\scr_Achievments.cs" />
      <Compile Include="Assets\Scripts\scr_Bear.cs" />
      <Compile Include="Assets\Scripts\scr_BillboardingScript.cs" />

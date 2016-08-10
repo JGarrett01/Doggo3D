@@ -1,17 +1,17 @@
 fileFormatVersion: 2
-guid: e7abeb15a9c9b6142b43283d7fdd2ab7
-timeCreated: 1470565566
+guid: 3f0a2ff3821d2434d96a4f74c7c85986
+timeCreated: 1470823525
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Tube012
-    400000: //RootNode
-    400002: Tube012
-    2300000: Tube012
-    3300000: Tube012
-    4300000: Tube012
+    100000: Climbramp003
+    100002: //RootNode
+    400000: Climbramp003
+    400002: //RootNode
+    2300000: Climbramp003
+    3300000: Climbramp003
+    4300000: Climbramp003
   materials:
     importMaterials: 1
     materialName: 0
@@ -36,7 +36,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.15
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
