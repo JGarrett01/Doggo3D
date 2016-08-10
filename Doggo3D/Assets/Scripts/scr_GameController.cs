@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Fungus;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class scr_GameController : MonoBehaviour {
 
@@ -11,9 +14,9 @@ public class scr_GameController : MonoBehaviour {
     public scr_Bear bearScript;
 
     public bool allDone = false;
+    public float endTimer = 5.0f;
 
-
-
+    public GameObject image;
 
     // Use this for initialization
     void Start()
@@ -35,8 +38,30 @@ public class scr_GameController : MonoBehaviour {
         }
 
 
+        if(allDone == true)
+        {
 
 
+            Fungus.Flowchart.BroadcastFungusMessage("endGame");
+            endTimer -= Time.deltaTime;
+            image.SetActive(true);
+      
+
+            if (endTimer <= 0)
+            {
+
+                //endGame here
+
+                SceneManager.LoadScene("CreditScene");
+
+
+
+            }
+                
+
+        }
+
+        
 
     }
 }

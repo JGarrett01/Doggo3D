@@ -56,12 +56,6 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -285,6 +279,7 @@
     <Compile Include="Assets\RoadTool\Scripts\RoadMath.cs" />
     <Compile Include="Assets\RoadTool\Scripts\RoadUtils.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Fade.cs" />
     <Compile Include="Assets\Scripts\scr_Achievments.cs" />
     <Compile Include="Assets\Scripts\scr_Bear.cs" />
     <Compile Include="Assets\Scripts\scr_BillboardingScript.cs" />
