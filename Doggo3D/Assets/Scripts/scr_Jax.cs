@@ -8,7 +8,7 @@ public class scr_Jax : MonoBehaviour {
 	public bool hasBall = false;
 	public GameObject inMouth;
     public bool hasCompleted = false;
-    public float timer = 5.0f;
+    public float timer = 2.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -18,11 +18,7 @@ public class scr_Jax : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-	 if (playerController.currPickup == null)
-        {
-            hasBall = false;
-
-        }	
+	
 		
 			inMouth = playerController.currPickup; 
 		
@@ -48,7 +44,9 @@ public class scr_Jax : MonoBehaviour {
 
 	void Interactions()
 	{
-		
+
+        hasCompleted = true;
+
 	}
 
 	void OnTriggerEnter(Collider other)
@@ -64,7 +62,7 @@ public class scr_Jax : MonoBehaviour {
 		if (other.gameObject.tag == "Player" && hasBall == true && hasCompleted == false) 
 		{
 			Fungus.Flowchart.BroadcastFungusMessage ("Jax");
-            hasCompleted = true;
+            Interactions();
            
 		}
 
