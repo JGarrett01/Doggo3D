@@ -40,6 +40,8 @@ public class scr_Kiki : MonoBehaviour {
 
 
 
+
+
     }
 
     void Interactions()

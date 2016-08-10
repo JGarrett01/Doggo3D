@@ -75,6 +75,11 @@ public class scr_PlayerController : MonoBehaviour {
 			joint.connectedBody = null;
 			dogInteraction.jaxTennisBall = false;
 		}
+
+//		if (currPickup == null) 
+//		{
+//			//do nothing?
+//		}
 	}
 
 	void OnTriggerStay(Collider other)
