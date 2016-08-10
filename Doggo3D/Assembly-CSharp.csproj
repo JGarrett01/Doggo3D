@@ -235,6 +235,7 @@
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\Fade.cs" />
      <Compile Include="Assets\Scripts\scr_Achievments.cs" />
+     <Compile Include="Assets\Scripts\scr_BallController.cs" />
      <Compile Include="Assets\Scripts\scr_Bear.cs" />
      <Compile Include="Assets\Scripts\scr_BillboardingScript.cs" />
      <Compile Include="Assets\Scripts\scr_Casper.cs" />
