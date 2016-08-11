@@ -67,9 +67,9 @@ public class CameraController : MonoBehaviour {
             wantedRotationAngle = target.eulerAngles.y;
         } else {
             if(Input.GetAxisRaw("RightStickX") < 0)
-                wantedRotationAngle += Time.deltaTime * rotationSpeed;
-            else
                 wantedRotationAngle -= Time.deltaTime * rotationSpeed;
+            else
+                wantedRotationAngle += Time.deltaTime * rotationSpeed;
         }
 
 
