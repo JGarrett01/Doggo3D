@@ -4,7 +4,8 @@ using Fungus;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class scr_GameController : MonoBehaviour {
+public class scr_GameController : MonoBehaviour
+{
 
     public scr_Maple mapleScript;
     public scr_Jax jaxScript;
@@ -16,12 +17,18 @@ public class scr_GameController : MonoBehaviour {
     public bool allDone = false;
     public float endTimer = 5.0f;
 
-    public GameObject image;
+    public GUITexture FadeToBlack;
+
+    public float fadeTime = 4.0f;
+    float rate;
+    float progressive = 0.0f;
+
+
 
     // Use this for initialization
     void Start()
     {
-
+        rate = 1.0f / fadeTime;
     }
 
     // Update is called once per frame
@@ -29,23 +36,28 @@ public class scr_GameController : MonoBehaviour {
     {
 
 
-        if (mapleScript.hasGreeted == true && jaxScript.hasCompleted == true && kikiScript.hasCompleted == true && princessScript.hasCompleted == true && zeusScript.hasGreeted == true && bearScript.hasGreeted == true)
+        if (mapleScript.hasGreeted && jaxScript.hasCompleted && kikiScript.hasCompleted && princessScript.hasCompleted && zeusScript.hasGreeted && bearScript.hasGreeted)
         {
-
             allDone = true;
-
-
         }
 
 
-        if(allDone == true)
+        if (allDone)
         {
 
 
             Fungus.Flowchart.BroadcastFungusMessage("endGame");
+
             endTimer -= Time.deltaTime;
-            image.SetActive(true);
-      
+
+            
+
+            progressive += rate * Time.deltaTime;
+
+            FadeToBlack.color = Color.Lerp(Color.clear, Color.black, progressive);
+
+            
+
 
             if (endTimer <= 0)
             {
@@ -57,11 +69,11 @@ public class scr_GameController : MonoBehaviour {
 
 
             }
-                
+
 
         }
 
-        
+
 
     }
 }

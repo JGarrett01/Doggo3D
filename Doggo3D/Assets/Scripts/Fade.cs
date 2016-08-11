@@ -5,19 +5,21 @@ using UnityEngine.UI;
 
 public class Fade : MonoBehaviour {
 
-    public Image image;
+    public GUITexture FadeToBlack;
 
 	// Use this for initialization
 	void Start () {
 
-        image.CrossFadeAlpha(0, 2, false);
 
     }
 	
 	// Update is called once per frame
 	void Update () {
-	
 
+        
 
-	}
+        //image.CrossFadeAlpha(225, 2, true);
+        //image.color.a = Mathf.Lerp
+        //image.color.a -= Time.deltaTime / 4;
+    }
 }

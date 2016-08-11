@@ -51,6 +51,8 @@ public class CameraController : MonoBehaviour {
     void Start() {
         //Setting the camera to look at the target.
         lookAtVector = new Vector3(0, lookAtHeight, 0);
+
+
     }
 
     void LateUpdate() {
