@@ -240,11 +240,13 @@
      <Compile Include="Assets\Scripts\scr_BillboardingScript.cs" />
      <Compile Include="Assets\Scripts\scr_Casper.cs" />
      <Compile Include="Assets\Scripts\scr_DogInteraction.cs" />
+     <Compile Include="Assets\Scripts\scr_FetchScript.cs" />
      <Compile Include="Assets\Scripts\scr_GameController.cs" />
      <Compile Include="Assets\Scripts\scr_Jax.cs" />
      <Compile Include="Assets\Scripts\scr_Kiki.cs" />
      <Compile Include="Assets\Scripts\scr_Maple.cs" />
      <Compile Include="Assets\Scripts\scr_MenuController.cs" />
+     <Compile Include="Assets\Scripts\scr_Owner2Fetch.cs" />
      <Compile Include="Assets\Scripts\scr_OwnerController.cs" />
      <Compile Include="Assets\Scripts\scr_Pickup.cs" />
      <Compile Include="Assets\Scripts\scr_PlayerController.cs" />
